@@ -1,0 +1,266 @@
+html, body
+{
+  /*background-image: -moz-radial-gradient(50% 0 90deg, circle cover, #E99D56, #c93620 100%);*/
+  font-family: 'Helvetica', sans-serif;
+  font-size: 12px;
+  margin: 0;
+  -moz-background-size: 100%;
+  background-attachment: fixed;
+}
+
+#webStore, #newApp
+{
+  background-image: -moz-linear-gradient(center top , #eee, #aaa);
+  display: none;
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-box-shadow: 0 5px 30px #000000;
+  margin: 0 13%;
+  padding: 1%;
+  position: fixed;
+  width: 70%;
+}
+
+#webStore
+{
+  height: 95%;
+}
+
+#newApp
+{
+  font-size: 24px;
+  margin: 0 25%;
+  width: 50%;
+  z-index: 99;
+}
+
+nav.main
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-box-shadow: 0 5px 30px #000000;
+  background-image: -moz-linear-gradient(center top , #EEEEEE, #AAAAAA);
+  bottom: 0;
+  height: 44px;
+  left: 50%;
+  margin-left: -40%;
+  position: fixed;
+  width: 80%;
+}
+
+input[type='text']
+{
+  -moz-border-radius: 20px;
+  -moz-box-shadow: 1px 1px 1px #666666 inset;
+  border: 1px solid #CCCCCC;
+  color: #666666;
+  font-size: 16px;
+  padding: 5px 12px 5px 12px;
+}
+
+#newApp input[type='text']
+{
+  width: 96%;
+}
+
+label
+{
+  display: block;
+}
+
+#search
+{
+  background-image: url("search.png");
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  margin: 7px 0 0 7px;
+  padding-left: 28px;
+  width: 50%;
+}
+
+nav.main button
+{
+  background-color: transparent;
+  background-image: -moz-linear-gradient(top, #ADB2B8, #6C7681);
+  background: -webkit-gradient(linear, center top, center bottom, from(#ADB2B8), to(#6C7681));
+  background-repeat: no-repeat;
+  border: solid 1px #666;
+  border-bottom-color: #333;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  font-size: 12px;
+  height: 28px;
+  line-height: 30px;
+  margin: 8px 8px 8px 0;
+  padding: 0 11px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 #000;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+nav.main button
+{
+  height: 30px;
+  padding-bottom: 2px!important;
+  padding: 0 8px 2px 8px;
+}
+
+nav.main button.showWebStore
+{
+  background-image: -moz-linear-gradient(top, #86B4DB, #367EBB);
+  background: -webkit-gradient(linear, center top, center bottom, from(#86B4DB), to(#367EBB));
+  border-color: #2C6697;
+}
+
+nav.main form
+{
+  display: inline;
+}
+
+ul, ul li
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#webStore nav
+{
+  display: table;
+  height: 100%;
+  width: 20%;
+  float: left;
+}
+
+#installs li, #webStore #apps li, #webStore #wallpapers li
+{
+  float: left;
+  width: 20%;
+}
+
+#installs li a, #webStore #apps li button, #webStore #wallpapers li button
+{
+  border: solid 1px #ccc;
+  background-color: #fff;
+  background-image: url(/assets/default_icon.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  border: solid 2px #fff;
+  color: #333;
+  -moz-background-size: 100%;
+  -moz-border-radius: 10px;
+  -moz-box-shadow: 0 5px 20px #000;
+  display: block;
+  height: 15px;
+  padding-top: 60px;
+  margin: 40px auto 20px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #fff;
+  width: 75px;
+}
+
+#installs.edit li a
+{
+  border: solid 2px #c00;
+  -moz-box-shadow: 0 0 20px #c00;
+}
+
+#webStore #apps li button, #webStore #wallpapers li button
+{
+  cursor: pointer;
+  height: 75px;
+  margin: 0 auto 20px;
+  padding-top: 56px;
+  -moz-box-shadow: none;
+}
+
+#webStore nav ul
+{
+  border-right: solid 1px #ccc;
+}
+
+#webStore nav .actions
+{
+  margin-top: 20px;
+}
+
+#webStore #categories
+{
+  overflow: hidden;
+}
+
+#webStore nav ul li
+{
+  margin-right: 10px;
+}
+
+#webStore nav button
+{
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 1px solid #BBBBBB;
+  color: #666666;
+  cursor: pointer;
+  display: block;
+  font-size: 17px;
+  padding: 10px 0 5px 0;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #FFFFFF;
+  width: 100%;
+}
+
+#webStore nav li button:hover, #webStore nav li.current button
+{
+  color: #c93620;
+}
+
+#webStore #apps, #webStore #wallpapers
+{
+  display: none;
+  float: left;
+  height: 100%;
+  overflow: auto;
+  width: 80%;
+}
+
+input[type='submit'], input[type='button']
+{
+  background-image: -moz-linear-gradient(top, #9c9, #363);
+  background-repeat: no-repeat;
+  border: solid 1px #666;
+  border-bottom-color: #333;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  font-size: 16px;
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 #000;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+input.cancel
+{
+  background-image: -moz-linear-gradient(top, #c99, #633);
+  float: left;
+}
+
+#dialogBacking
+{
+  background-color: #000;
+  display: none;
+  height: 100%;
+  opacity: 0.6;
+  position: fixed;
+  width: 100%;
+  z-index: 98;
+}

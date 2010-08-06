@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset=utf-8>
+    <title>Start Apps</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+    <ul id="installs">
+    </ul>
+    <nav class="main">
+      <form action="http://www.google.com/search" target="_blank">
+        <input id="search" name="q" type="text" placeholder="Google search..." />
+      </form>
+      <button class="showWebStore">Web Store</button>
+      <button class="toggleEditMode">Edit</button>
+    </nav>
+    <section id="webStore">
+      <nav>
+        <ul id="categories">
+        </ul>
+        <ul>
+          <li><button class="showWallpapers">Wallpapers</button></li>
+        </ul>
+        <ul class="actions">
+          <li><button class="addApp">Add Website</button></li>
+          <li><button class="close">Close WebStore</button></li>
+          <li><button id="reset">Reset</button></li>
+        </ul>
+      </nav>
+      <ul id="apps">
+      </ul>
+      <ul id="wallpapers">
+      </ul>
+    </section>
+    <form id="newApp">
+      <p><label for="newAppTitle">Title:</label><input type="text" id="newAppTitle" /></p>
+      <p><label for="newAppURL">URL:</label><input type="text" id="newAppURL" /></p>
+      <p><label for="newAppCategory">Category:</label><input type="text" id="newAppCategory" /></p>
+      <p>
+        <input class="cancel" type="button" value="Cancel" />
+        <input type="submit" value="Add" />
+      </p>
+    </form>
+    <div id="dialogBacking"></div>
+    <script src="jquery.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
