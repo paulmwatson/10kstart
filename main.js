@@ -122,6 +122,7 @@ function installApp()
 
 function setWallpaper()
 {
+  console.log(this);
   var wallpaper = wallpapers[$(this).attr('data-wallpaper')];
   $('body').css('background-image', wallpaper.css);
   localStorage.setObject('wallpaper', wallpaper);

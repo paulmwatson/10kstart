@@ -2,16 +2,27 @@
 <html lang="en">
   <head>
     <meta charset=utf-8>
-    <title>Start Apps</title>
+    <title>Start Page</title>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-265441-14']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
   <body>
     <ul id="installs">
     </ul>
     <nav class="main">
       <form action="http://www.google.com/search" target="_blank">
-        <input id="search" name="q" type="text" placeholder="Google search..." />
+        <input id="search" name="q" type="text" title="Search Google" placeholder="Google search..." />
       </form>
       <button class="showWebStore">Web Store</button>
       <button class="toggleEditMode">Edit</button>
